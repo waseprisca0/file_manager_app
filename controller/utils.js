@@ -18,7 +18,7 @@ const updateAuthorsBlogsArray = async (newblog) => {
         return error
     }
 }
-
+//remove blog from authors list
 const removeBlogFromAuthorsList = async (blog) => {
     try {
         const authorID = blog.author
