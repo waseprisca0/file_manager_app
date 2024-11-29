@@ -4,7 +4,7 @@ const userModel = require('../Models/author.model')
 const blogModel = require('../Models/blog.model')
 require('mongoose')
 
-
+//update authors blogs array
 
 const updateAuthorsBlogsArray = async (newblog) => {
     try {
