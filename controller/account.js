@@ -5,7 +5,7 @@ exports.signup = (req, res, next) => {
         message: 'Sign up successful!'
     })
 }
-
+//login
 exports.login = (req, res, next) => {
     try {
         const { user } = req
