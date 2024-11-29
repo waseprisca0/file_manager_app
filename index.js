@@ -22,7 +22,7 @@ const blogController = require('./controller/blogpost')
 const PORT = process.env.PORT
 
 const app = express()
-
+//Rate limiting
 const limiter = rateLimit({
     windowMs: 2 * 60 * 1000, // 15 minutes
     max: 50, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
