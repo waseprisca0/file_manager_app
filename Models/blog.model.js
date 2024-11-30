@@ -37,3 +37,5 @@ blogSchema.plugin(mongoosePaginate)
 
 const blog = mongooose.model('blog', blogSchema)
 module.exports = blog
+
+
