@@ -14,11 +14,11 @@ const PORT = process.env.PORT
 
 const app = express()
 
-// Middlewares
+//Middlewares
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: false }))
 
-// routes
+//routes
 app.use('/blogs', blogRoutes)
 app.use('/user', userRouter)
 
