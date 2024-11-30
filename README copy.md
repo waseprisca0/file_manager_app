@@ -89,8 +89,8 @@ An Api for a Blogging app
 - Body: 
 ```
 {
-  "email": "bigshow@gmail.com",
-  "password": "zuzu",
+  "email": "trialone@gmail.com",
+  "password": "onetwo",
 }
 ```
 
@@ -101,9 +101,9 @@ Success
 {
   "user": {
     "_id": "63667ea856c6eb4f2f960066",
-    "email": "bigshow@gmail.com",
-    "firstname": "Timi",
-    "lastname": "Olubode",
+    "email": "trialone@gmail.com",
+    "firstname": "Prisca",
+    "lastname": "Wase",
     "password": "$2b$10$66AnHJLVgq1Op.FHYH1aG.ynG5oCZW1O6C.RLEg1lKjJvgGAzQPi6",
     "blogs": [
       {
@@ -148,8 +148,8 @@ Success
             "title": "How to Use Mongoose Population",
             "author": {
                 "_id": "63ad5dec20414c5dd256018e",
-                "firstname": "Pius",
-                "lastname": "Ezekiel",
+                "firstname": "Esther",
+                "lastname": "Umunyana",
                 "blog_count": 0
             },
             "state": "published",
@@ -169,8 +169,8 @@ Success
             "title": "AltSchool Blogs",
             "author": {
                 "_id": "63ad6390fc27698b915d538f",
-                "firstname": "Timi",
-                "lastname": "Olubode",
+                "firstname": "Prisca",
+                "lastname": "Wase",
                 "blog_count": 0
             },
             "state": "published",
@@ -189,8 +189,8 @@ Success
             "title": "Data Structures and Algorithm",
             "author": {
                 "_id": "63ad6390fc27698b915d538f",
-                "firstname": "Timi",
-                "lastname": "Olubode",
+                "firstname": "Prisca",
+                "lastname": "Wase",
                 "blog_count": 0
             },
             "state": "published",
@@ -278,9 +278,9 @@ Success
   "status": true,
   "blog": {
     "author": {
-      "email": "bigshow@gmail.com",
+      "email": "trialone@gmail.com",
       "_id": "63667ea856c6eb4f2f960066",
-      "fullname": "Timi Olubode"
+      "fullname": "Prisca Wase"
     },
     "_id": "6369faf30b0896b4b5f26292",
     "title": "Json token",
@@ -349,9 +349,9 @@ Success
   "status": true,
   "blog": {
     "author": {
-      "email": "bigshow@gmail.com",
+      "email": "trialone@gmail.com",
       "_id": "63667ea856c6eb4f2f960066",
-      "fullname": "Timi Olubode"
+      "fullname": "Prisca Wase"
     },
     "_id": "6369faf30b0896b4b5f26292",
     "title": "Json token",
@@ -372,4 +372,4 @@ Success
 
 
 ## Owner
-- Olubode Sunday Samuel
+- Prisca and Wase
