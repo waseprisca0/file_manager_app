@@ -5,13 +5,13 @@ const database = require('./database/mongoDB')
 
 const bodyparser = require('body-parser')
 
-//Security
+// Security
 const passport = require('passport')
 const rateLimit = require("express-rate-limit");
 require('./authentication/passportJWT')
 require('dotenv').config()
 
-//Middlewares
+// Middlewares
 const account = require('./controller/account')
 const authorRouter = require('./routes/author.route')
 const blogRouter = require('./routes/blog.route')
@@ -22,7 +22,7 @@ const blogController = require('./controller/blogpost')
 const PORT = process.env.PORT
 
 const app = express()
-//Rate limiting
+// Rate limiting
 const limiter = rateLimit({
     windowMs: 2 * 60 * 1000, // 15 minutes
     max: 50, // Limit each IP to 100 requests per `window` (here, per 15 minutes)
@@ -32,7 +32,7 @@ const limiter = rateLimit({
     skipFailedRequests: true
 })
 
-//Middlewares
+// Middlewares
 app.use(bodyparser.json())
 app.use(bodyparser.urlencoded({ extended: false }))
 app.use(limiter)
@@ -43,7 +43,7 @@ app.use(limiter)
 
 
 
-//Routers
+// Routers
 app.use('/author', passport.authenticate('jwt', {session: false}), authorRouter)
 
 app.use('/blog', passport.authenticate('jwt', {session: false}), blogRouter)
@@ -54,7 +54,7 @@ app.use('/blog', passport.authenticate('jwt', {session: false}), blogRouter)
 
 
 
-// //Databse
+// Databse
 database.connection()
 
 app.post('/auth/signup', validation.validateSignup, passport.authenticate('signup', { session: false }), account.signup)
