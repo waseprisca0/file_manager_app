@@ -31,14 +31,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SundayOlubode/blog_api.git"
+    "url": "git+https://github.com/waseprisca/blog_api.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/SundayOlubode/blog_api/issues"
+    "url": "https://github.com/waseprisca/blog_api/issues"
   },
-  "homepage": "https://github.com/SundayOlubode/blog_api#readme",
+  "homepage": "https://github.com/waseorisca/blog_api#readme",
   "description": ""
 }
